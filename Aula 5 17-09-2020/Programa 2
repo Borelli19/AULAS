@@ -1,0 +1,20 @@
+#O usuário informa 2 listas, juntamos e exibimos na lista 3
+lista_1 = []
+lista_2 = []
+lista_3 = []
+quantidade_na_lista_1 = int(input("quantos valores na lista 1"))
+
+while len(lista_1) < quantidade_na_lista_1:
+  valor = int(input('valor: '))
+  #adicionar no final da lista
+  lista_1.append(valor)
+  Print('quantidade de itens na lista: ' , len(lista_1))
+  print('itens na lista: , lista_1')
+
+  quantidade_na_lista_2 = int(input('quantos valores na lista 2?'))
+
+  while len(lista_2) < quantidade_na_lista_2:
+    valor = int(input('valor: '))
+    lista_2.append(valor)
+    print('quantidade de itens na lista: ', len(lista_2))
+    print('itens na lista: ', lista_2)
