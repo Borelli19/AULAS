@@ -1,0 +1,31 @@
+#Criar um log de temperatueas
+#Ler N temperaturas
+#Calcular a temperatura media
+#Encontrar todas as temperaturas acima da media
+#Encontrar a maior temperatura
+#Encontrar a menor temperatura
+temperaturas = []
+
+quantidade = int(input('Quantidade: '))
+
+while len(temperaturas) < quantidade:
+  temperarutra = float(input('informe temp.:'))
+  temperatura.append(temperatura)
+
+  #Calcula o valor da temperatura media
+  media = sum(temperaturas) / len(temperaturas)
+  #Crie uma lista vazia para guardar as temperaturas acima da media
+  temp_acima_da_media = []
+  for temperatura in temperaturas:
+    if temperatura > media:
+      temp_acima_da_media.append(temperatura)
+
+      maior = max(temperaturas)
+      menor = min(temperaturas)
+
+      print('temperaturas informadas')
+      print(temperaturas)
+      print('temp. Media: ', media)
+      print('temps acima da media: ', temp_acima_da_media)
+      print('temp. maxima: ', maior)
+      print('temp. minima: ', menor)
