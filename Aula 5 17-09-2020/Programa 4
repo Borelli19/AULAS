@@ -1,0 +1,35 @@
+#Le uma lista e separa os valores impares dos pares
+#cria uma lista vazia
+numeros = []
+
+#pergunta ao usuário quantos valores ele deseja informar
+quantidade = int(input("quantidade de valores que deseja informar"))
+
+#Le os números para a lista
+while len(numeros) < quantidade:
+  numero = int(input('valor: '))
+  numeros.append(numero)
+
+  print('valores informados: ')
+  print(numeros)
+
+  #Crie uma lista para guardar valores pares e outra para valores impares
+  pares = []
+  impares = []
+
+  #Passar por todos os itens da lista
+  for numero in numeros:
+    if numero % 2 == 0:
+      pares.append(numero)
+    else:
+      impares.append(numero)
+
+if len(pares) > 0:
+  print('pares: ', pares)
+else:
+  print('nenhum numero par informado')
+
+if len(impares) > 0:
+  print('impares: ', impares)
+else:
+  print('nenhum numero impar informado')
